@@ -1,7 +1,7 @@
 //file:shift8_128.v 8位128字RAM-based移位寄存器
 //Lai Yongtian 2018-4-3
 
-`define WIDTHofADDR 7
+//`define WIDTHofADDR 7
 
 module shiftRam8_128 (
   clk,    //
@@ -27,8 +27,8 @@ output reg [7:0] dout, dshift;
 output reg sout;  //sample time,
 reg sout_r1;
 
-(* ramstyle = "M9K" *) reg [7:0] ram[2**`WIDTHofADDR-1:0];
-reg [`WIDTHofADDR-1:0] baseAddr, shiftAddr;
+(* ramstyle = "M9K" *) reg [7:0] ram[2**7-1:0];
+reg [7-1:0] baseAddr, shiftAddr;
 wire [7:0] data;
 
 reg		[1:0]state;
@@ -38,7 +38,7 @@ parameter Swait = 0, Sshift = 1, Sout = 2;
 integer i;
 initial
 begin
-	for(i=0;i<2**`WIDTHofADDR;i=i+1)
+	for(i=0;i<2**7;i=i+1)
 		ram[i] <= 8'd0;
 end
 
@@ -58,7 +58,7 @@ else
           else state <= Swait;
    Sshift: state <= Sout;
    //Stop judge
-   Sout : if(shiftAddr + `WIDTHofADDR'd1 == baseAddr) state <= Swait;
+   Sout : if(shiftAddr + 7'd1 == baseAddr) state <= Swait;
           else state <= Sout;
    endcase
 
@@ -74,14 +74,14 @@ always @ (state or data)
 always @ ( posedge clk or negedge rst_n )
 if( !rst_n )
 begin
-  baseAddr <= `WIDTHofADDR'd0;
-  shiftAddr <= `WIDTHofADDR'd0;
+  baseAddr <= 7'd0;
+  shiftAddr <= 7'd0;
 end
 else
   case (state)
    Swait: begin baseAddr <= baseAddr; shiftAddr <= baseAddr; end
-   Sshift: begin baseAddr <= baseAddr + `WIDTHofADDR'd1; shiftAddr <=  baseAddr + `WIDTHofADDR'd1;end
-   Sout : begin baseAddr <= baseAddr; shiftAddr <= shiftAddr + `WIDTHofADDR'd1;end
+   Sshift: begin baseAddr <= baseAddr + 7'd1; shiftAddr <=  baseAddr + 7'd1;end
+   Sout : begin baseAddr <= baseAddr; shiftAddr <= shiftAddr + 7'd1;end
    endcase
 
 //  combine: data out

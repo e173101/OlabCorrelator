@@ -1,7 +1,7 @@
 //file: macRam8_32_64.v 8位输入，32位输出RAM-based 乘法器组，一组64个
 //Lai Yongtian 2018-4-3
 
-`define WIDTHofADDR 6
+//`define WIDTHofADDR 6
 
 module macRam8_32_64 (
   clk,
@@ -28,12 +28,12 @@ input sin;  //sample time,
 
 //read
 input read;
-input [`WIDTHofADDR-1:0] rAddr;
+input [5:0] rAddr;
 output reg [31:0] rData;
 
 //ram
-(* ramstyle = "M9K" *) reg [31:0] ram[2**`WIDTHofADDR-1:0];
-reg [`WIDTHofADDR-1:0] addr;
+(* ramstyle = "M9K" *) reg [31:0] ram[2**6-1:0];
+reg [5:0] addr;
 
 reg		[1:0]state;
 parameter Swait = 0, Smac = 1, Sclr = 2, Sread = 3;

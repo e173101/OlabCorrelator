@@ -20,7 +20,7 @@ module readRamConfig
   RamDAddr,
   RamDData,
   RamEAddr,
-  RamEData,
+  RamEData
   );
 
 input     [15:0] RamAddr;
@@ -41,7 +41,8 @@ wire    [3:0]   RamSel;
 
 assign  RamSel = RamAddr[15:12];
   
-always@(RamAddr or RamAddr or RamBData or RamCData or RamDData or RamEData)
+always@(RamSel or RamAddr or RamAddr or RamBData or RamCData or RamDData or RamEData
+					or RamAData or RamBData or RamCData or RamDData or RamEData)
 case(RamSel)
   4'd1: RamData = RamAData;
   4'd2: RamData = RamBData;

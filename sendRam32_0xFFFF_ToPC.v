@@ -1,8 +1,7 @@
 //file:sendRam32_0xFFFF_ToPC.v
 //dend startAddr to endAddr using the uart to PC
-//Lai Yongtian 2018-4-7
-
-`define WIDTHofADDR 16  //0xFFFF
+//Lai Yongtian 2018-4-18
+//0xFFFF
 
 module sendRam32_0xFFFF_ToPC(
 	clk,
@@ -27,12 +26,12 @@ module sendRam32_0xFFFF_ToPC(
 input clk;		// 100MHz主时钟
 input rst_n;	//低电平复位信号
 input sendSig;	//发一拍
-input [`WIDTHofADDR-1:0] startAddr;
-input [`WIDTHofADDR-1:0] endAddr;
+input [15:0] startAddr;
+input [15:0] endAddr;
 input [31:0]data; //
 
 output reg read;
-output reg [`WIDTHofADDR-1:0] addr;
+output reg [15:0] addr;
 output rs232_tx;
 output reg ok;
 
@@ -76,7 +75,7 @@ else
 //
 always @ ( posedge clk or negedge rst_n )
 if( !rst_n )
-  addr <= `WIDTHofADDR'd0;
+  addr <= 16'd0;
 else
   case (state)
    Swait: addr <= startAddr;
@@ -88,7 +87,7 @@ else
    SwaitSendOver3: addr <=  addr;
    Ssend4: addr <= addr;
    SwaitSendOver4: addr <=  addr;
-   SnextAddr: addr <= addr + `WIDTHofADDR'd1;
+   SnextAddr: addr <= addr + 16'd1;
    Send: addr <= addr;
    endcase
    
@@ -108,7 +107,7 @@ always @ (state)
    Send:             ok <= 1'd1;
   endcase
 
-always @ (state or data8bit)
+always @ (state or data8bit or data)
   case (state)
    default:           data8bit <= 8'd0;
    Ssend1:            data8bit <= data[7:0];
