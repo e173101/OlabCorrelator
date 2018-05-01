@@ -1,0 +1,409 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/atian/Code/FPGA/Cora/Simulate/v5
+vcorrelatorMulti
+Z0 !s110 1525137679
+!i10b 1
+!s100 ZV<k`i=gi3h8^l>J8oIAD2
+I[<2SaOgI5ZgTNcQ6XI2H:3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/atian/Correlator/RAMbased_MultiTau
+w1524038233
+8C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti.v
+L0 19
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z4 !s108 1525137679.000000
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti.v|
+!i113 1
+Z5 o-work work
+ncorrelator@multi
+vcorrelatorMulti_tb
+R0
+!i10b 1
+!s100 <XYbCOPVJhU[RVGPHjanC3
+IOOF`jTHA;=f]lf_Jg;ZLm2
+R1
+R2
+w1523088077
+8C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti_tb.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti_tb.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/correlatorMulti_tb.v|
+!i113 1
+R5
+ncorrelator@multi_tb
+vmacRam8_32_128
+R0
+!i10b 1
+!s100 :]:;>VJIShScMf3[9>3ah3
+I@665nHk4@^HFX8AL6M<jg1
+R1
+R2
+w1524042018
+8C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_128.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_128.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_128.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_128.v|
+!i113 1
+R5
+nmac@ram8_32_128
+vmacRam8_32_256
+R0
+!i10b 1
+!s100 23HnU5Y_5^EYzg<laPF<61
+IHnJN>N4nKo[fjT43cR5EF0
+R1
+R2
+Z6 w1524042178
+8C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_256.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_256.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_256.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_256.v|
+!i113 1
+R5
+nmac@ram8_32_256
+vmacRam8_32_32
+Z7 !s110 1525138683
+!i10b 1
+!s100 o2ZLbMU5`cNUUJWXmRcQe0
+I1JB]7ZS48>MSnQ:`6de6@2
+R1
+R2
+w1525137842
+8C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_32.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_32.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z8 !s108 1525138683.000000
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_32.v|
+!i113 1
+R5
+nmac@ram8_32_32
+vmacRam8_32_512
+R0
+!i10b 1
+!s100 bFHYU42a]YRml72dEDAF`3
+Ib]AB?<`hem5aHL>Wbzjle3
+R1
+R2
+R6
+8C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_512.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_512.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_512.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_512.v|
+!i113 1
+R5
+nmac@ram8_32_512
+vmacRam8_32_64
+R7
+!i10b 1
+!s100 k?W9gUId]7Jii[E2?;[Hn1
+I:^LZ9<LNMg=C[_Ldn]A_f0
+R1
+R2
+w1525138678
+8C:\Users\atian\Correlator\RAMbased_MultiTau\macRam8_32_64.v
+FC:\Users\atian\Correlator\RAMbased_MultiTau\macRam8_32_64.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:\Users\atian\Correlator\RAMbased_MultiTau\macRam8_32_64.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\atian\Correlator\RAMbased_MultiTau\macRam8_32_64.v|
+!i113 1
+R5
+nmac@ram8_32_64
+vmacRam8_32_based
+!s110 1525138716
+!i10b 1
+!s100 l``@nh?2gLgI5_T[0Lz:o0
+I]`ZD=hYZ=z[HdV2`6QM]M1
+R1
+R2
+w1525138201
+8C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_based.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_based.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1525138716.000000
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_based.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/macRam8_32_based.v|
+!i113 1
+R5
+nmac@ram8_32_based
+vreadRamConfig
+R0
+!i10b 1
+!s100 :l_J@`g?L@nm3<KBL`4ac1
+IN[4dn6F9F9T9Hbh1H>ICY0
+R1
+R2
+w1524017805
+8C:/Users/atian/Correlator/RAMbased_MultiTau/readRamConfig.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/readRamConfig.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/readRamConfig.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/readRamConfig.v|
+!i113 1
+R5
+nread@ram@config
+vsendRam32_0xFFFF_ToPC
+Z9 !s110 1525137680
+!i10b 1
+!s100 _[>?LK9X`EV[@@VDgE;G]1
+I0k>m65GzjEHVKL[3A[MXA0
+R1
+R2
+w1524038209
+8C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z10 !s108 1525137680.000000
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC.v|
+!i113 1
+R5
+nsend@ram32_0x@f@f@f@f_@to@p@c
+vsendRam32_0xFFFF_ToPC_tb
+R9
+!i10b 1
+!s100 Lb0>LBSjRagH8ce:FE5[=0
+I]j@iMAEG0Hg:Jj8Pk=dP_0
+R1
+R2
+w1523092543
+8C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC_tb.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/sendRam32_0xFFFF_ToPC_tb.v|
+!i113 1
+R5
+nsend@ram32_0x@f@f@f@f_@to@p@c_tb
+vsendSel
+R9
+!i10b 1
+!s100 NVnc`oHE7a_QXd7HC@1I53
+I@hK5W4h7Obke;nJbFZ9f10
+R1
+R2
+w1524016544
+8C:/Users/atian/Correlator/RAMbased_MultiTau/sendSel.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/sendSel.v
+L0 16
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/sendSel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/sendSel.v|
+!i113 1
+R5
+nsend@sel
+vshiftRam8_128
+R9
+!i10b 1
+!s100 IzN[IE2^83>J5kcgQYhgg0
+I:m@Z]1^CmEohmAa966R[M0
+R1
+R2
+Z11 w1524042180
+8C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_128.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_128.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_128.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_128.v|
+!i113 1
+R5
+nshift@ram8_128
+vshiftRam8_256
+R9
+!i10b 1
+!s100 I3g3GYaUEICU>LVkP8:IQ1
+InMnQ:4PFKm5Xf@IIdP]Kz1
+R1
+R2
+R11
+8C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_256.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_256.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_256.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_256.v|
+!i113 1
+R5
+nshift@ram8_256
+vshiftRam8_32
+R9
+!i10b 1
+!s100 _=;7ZkWbch_miR3OHA_b83
+I]UgD^aA^dlXjK_Y[g[DaP3
+R1
+R2
+w1524042176
+8C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_32.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_32.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_32.v|
+!i113 1
+R5
+nshift@ram8_32
+vshiftRam8_512
+R9
+!i10b 1
+!s100 fBSdSAoJOGNR15m9zHPN31
+I3;n4N8n]d6WMBn5GA0n?=2
+R1
+R2
+w1524042181
+8C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_512.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_512.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_512.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_512.v|
+!i113 1
+R5
+nshift@ram8_512
+vshiftRam8_64
+R9
+!i10b 1
+!s100 J5RZUfb44GP52XKYAo<Xf0
+Izc1[LTnm@cUJhDkRG3B0e3
+R1
+R2
+w1524042179
+8C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_64.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_64.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_64.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/shiftRam8_64.v|
+!i113 1
+R5
+nshift@ram8_64
+vstartStopConfig
+R9
+!i10b 1
+!s100 HX`CMT=jhYVXbhh?P9LCP2
+Iea<:cPWVZzERhW[G^5Amd0
+R1
+R2
+w1524016675
+8C:/Users/atian/Correlator/RAMbased_MultiTau/startStopConfig.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/startStopConfig.v
+L0 6
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/startStopConfig.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/startStopConfig.v|
+!i113 1
+R5
+nstart@stop@config
+vtauConfig
+R9
+!i10b 1
+!s100 Y4[JdnbHHGVhZEfIR`D991
+Ia1>djF@iA[@bNJ0SjlB;f3
+R1
+R2
+w1523945827
+8C:/Users/atian/Correlator/RAMbased_MultiTau/tauConfig.v
+FC:/Users/atian/Correlator/RAMbased_MultiTau/tauConfig.v
+L0 5
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/atian/Correlator/RAMbased_MultiTau/tauConfig.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/atian/Correlator/RAMbased_MultiTau/tauConfig.v|
+!i113 1
+R5
+ntau@config

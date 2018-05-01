@@ -37,7 +37,7 @@
 // The meaning of P,M,S in the refs be gived to you or my graduation paper
 //////////////////////////////////////////////////////////////////////////////////
 
-module correlatorMulti
+module correlator
 (
 	clk, 
 	rst_n, 

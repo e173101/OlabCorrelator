@@ -1,9 +1,12 @@
-//file: macRam8_32_64.v 8位输入，32位输出RAM-based 乘法器组，一组64个
-//Lai Yongtian 2018-4-3
+//file: macRam8_32_based.v 8位输入，32位输出RAM-based 乘法器组
+//通过修改WIDTHofADDR更改数目
+//其它命名为macRAM8_32_XXXXX的乘累加器由此衍生
+//其它命名为macRAM8_32_XXXXX的乘累加器由于是固定位数的，文本中的define直接替换，防止多重定义
+//Lai Yongtian 2018-5-1
 
-//`define WIDTHofADDR 6
+`define WIDTHofADDR 5
 
-module macRam8_32_64 (
+module macRam8_32_based (
   clk,
   rst_n,
   clr,    //sync clear signal it need 32 clk
@@ -28,12 +31,12 @@ input sin;  //sample time,
 
 //read
 input read;
-input [5:0] rAddr;
+input [`WIDTHofADDR-1:0] rAddr;
 output reg [31:0] rData;
 
 //ram
-(* ramstyle = "M9K" *) reg [31:0] ram[2**6-1:0];
-reg [5:0] addr;
+(* ramstyle = "M9K" *) reg [31:0] ram[2**`WIDTHofADDR-1:0];
+reg [`WIDTHofADDR-1:0] addr;
 
 reg		[1:0]state;
 parameter Swait = 0, Smac = 1, Sclr = 2, Sread = 3;
@@ -42,9 +45,10 @@ parameter Swait = 0, Smac = 1, Sclr = 2, Sread = 3;
 integer i;
 initial
 begin
-	for(i=0;i<2**6;i=i+1)
+	for(i=0;i<2**`WIDTHofADDR;i=i+1)
 		ram[i] <= 8'd0;
 end
+
 // Read Port 
 always @ (posedge clk) rData <= C;
 
@@ -60,9 +64,9 @@ else
             else
               if (read) state <= Sread;
               else    state <= Swait;
-   Smac:  if(addr + 6'd1 == 6'd0) state <= Swait;
+   Smac:  if(addr + 5'd1 == 5'd0) state <= Swait;
           else state <= Smac;
-   Sclr:  if(addr + 6'd1 == 6'd0) state <= Swait;
+   Sclr:  if(addr + 5'd1 == 5'd0) state <= Swait;
           else state <= Sclr;
    Sread: if (read) state <= Sread;
               else    state <= Swait;
@@ -77,12 +81,12 @@ assign C = ram[addr];
 //combine: addr
 always @ ( posedge clk or negedge rst_n )
 if( !rst_n )
-  addr <= 6'd0;
+  addr <= 5'd0;
 else
   case (state)
-   Swait: addr <= 6'd0;
-   Smac: addr <= addr + 6'd1;
-   Sclr : addr <= addr + 6'd1;
+   Swait: addr <= 5'd0;
+   Smac: addr <= addr + 5'd1;
+   Sclr : addr <= addr + 5'd1;
    Sread : addr <= rAddr;
   endcase
 
